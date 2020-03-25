@@ -1,0 +1,49 @@
+@import "variables";
+@import 'mixin';
+@import "colors-class";
+@import "custom-animation";
+
+::-webkit-scrollbar {
+  width: 3px;
+  /* This is more usable for users trying to click it. */
+  background-color: rgba(100, 100, 100, 0.1);
+  -webkit-border-radius: 100px;
+}
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+  /* This is the EXACT color of Mac OS scrollbars.
+     Yes, I pulled out digital color meter */
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+  -webkit-border-radius: 100px;
+}
+.fabIcon{
+  right: 52px;
+  bottom: 39px;
+  position: fixed;
+  border-radius: 100% !important;
+  cursor: pointer;
+  padding: 7px !important;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 2px 2px #b6b8b6, inset 0px 0px 12px 32px #242424 !important;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+.text-center{
+  text-align:center !important;
+}
+.fs-bg{
+  font-size:3.4em !important;
+  margin-bottom:0.16em !important;
+}
